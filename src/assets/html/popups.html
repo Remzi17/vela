@@ -1,0 +1,41 @@
+<!-- Модалки -->
+
+<div class="popups">
+	<!-- Заказать звонок -->
+	<div class="popup popup-call" id="popup-call">
+		<div class="popup__dialog">
+			<div class="popup__content">
+				<button class="popup__close" type="button" data-popup-close>
+					<svg class="close">
+						<use xlink:href="assets/img/sprite.svg#close"></use>
+					</svg>
+				</button>
+				<div class="form popup__form">
+					<div class="title-2 popup__title">Заказать звонок</div>
+					<form>
+						<input type="hidden" name="info" class="popup-info">
+						<div class="input-wrapper">
+							<input class="input" type="text" name="name" placeholder="Имя" required>
+							<input class="input" type="tel" name="phone" placeholder="Телефон" required>
+							<label class="checkbox">
+								<input class="checkbox__input" type="checkbox" checked required>
+								<span class="checkbox__text">Нажимая на кнопку “Отправить”, Вы соглашаетесь с <a href="text.html" class="underline" target="_blank">Пользовательским соглашением</a> и <a href="text.html" class="underline" target="_blank">Политикой конфиденциальности</a></span>
+							</label>
+							<button class="button submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Окно благодарности -->
+	<div class="popup popup-thank" id="popup-thank">
+		<div class="popup__dialog">
+			<div class="popup__content">
+				<div class="popup__title">Спасибо за заявку!</div>
+				<img src="assets/img/icons/check.svg" width="80" alt="img">
+			</div>
+		</div>
+	</div>
+</div>
